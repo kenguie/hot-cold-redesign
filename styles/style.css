@@ -30,7 +30,8 @@ body {
 	height: 96%;
 	margin: 0.8em auto;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	background-color: #1F253D;
+	/* background-color: #1F253D; */
+	background: linear-gradient(to right, #C04D4A, #AABFE4);
 	text-align: center;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -79,10 +80,12 @@ nav a {
 }
 
 h1 {
+	font-family: 'Trade Winds', cursive;
 	font-weight: 900;
 	font-size: 3em;
 	padding: 0.8em;
-	color: #fff;
+	color: #EAECA8;
+	text-decoration: underline;
 
 }
 
@@ -177,7 +180,7 @@ h1 {
 	border-radius: 4px;
 	margin: 0 auto;
 
-	box-shadow: rgb(26, 31, 52) 1px 1px,
+	/*box-shadow: rgb(26, 31, 52) 1px 1px,
     rgb(26, 31, 52) 2px 2px,
     rgb(26, 31, 52) 3px 3px,
     rgb(26, 31, 53) 4px 4px,
@@ -204,7 +207,7 @@ h1 {
     rgb(30, 36, 60) 25px 25px,
     rgb(30, 36, 60) 26px 26px,
     rgb(30, 36, 60) 27px 27px,
-    rgb(31, 37, 61) 28px 28px;
+    rgb(31, 37, 61) 28px 28px;  */
 
 }
 
