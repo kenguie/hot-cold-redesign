@@ -14,7 +14,8 @@ $(document).ready(function(){
 	
 	/*--- Get the hidden number and start the game on new button ---*/
 	$(".new").click(function() {
-		$("#feedback").text ("Make your Guess!");
+		location.reload();
+		/* $("#feedback").text ("Make your Guess!");
 		$("#guessList").empty();
 		$("#userGuess").val("");
 		$("#count").text ("0");
@@ -24,7 +25,7 @@ $(document).ready(function(){
 		guesses = [];
 		howfar = 0;
 		prevhowfar = 0;
-		guess=0;
+		guess=0; */
 	});	
 	
 	/*--- Display information modal box ---*/
@@ -92,18 +93,38 @@ $(document).ready(function(){
 		
 		if (guess===answer) {  
 			$("#feedback").text("Congratulations! You got it! The secret number was " +answer+ "!")
+			document.body.style.background=("red");
+			//$('.game').animate({backgroundColor:'red'}, 2500);
+			//$('body').animate( { backgroundColor: hue }, 1000);
+			// $('.game').animate({backgroundColor:"red"},'slow');
+			// $('h2').animate({background:'#99cc00'}, 2500);
+			
+			/* $("input #userGuess").on("mouseover",function(){
+				$(this).animate({backgroundColor:"red"},'slow');
+				}).on("mouseleave",function(){
+				$(this).animate({backgroundColor:"white"},'slow');
+			});  */
+			
 			tries=0;
 			
 		} else if (tries==1) {
 			$("#feedback").text ("Good first guess, try again ... ");
+			document.body.style.background=("rgb(198, 238, 155)");
 			
 		} else if (howfar >= 1 && howfar <= 10) {
 			$("#feedback").text ("Yikes! You are on Fire! Guess again!")
+			document.body.style.background=("rgb(231, 144, 64)");
+			
 		} else if (howfar >= 11 && howfar <= 20) {
 			$("#feedback").text ("You are really warm, try again!")
+			document.body.style.background=("rgb(169, 44, 180)");
+			
 		} else if (howfar >= 21 && howfar <=30) {
 			$("#feedback").text ("Ooooooh, you're kinda cold! Give it another shot.")
+			document.body.style.background=("rgb(62, 60, 128)");
+			
 		} else {$("#feedback").text ("You are ice cold!")
+			document.body.style.background=("rgb(188, 186, 246)");
 		};
 		
 // This works but I wanted more levels - thinking of combining both parts later		
@@ -121,7 +142,18 @@ $(document).ready(function(){
 			};
 		}; */
 		$("#guessList").append ('<li class="guessBox">'+guess+ '</li>');
-	};	
+	};
+	
+	/*spectrum();
+ 
+	function spectrum(){
+		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		$('#div').animate( { backgroundColor: hue }, 1000);
+		spectrum();
+	}
+		*/
+
+	
 });
 
 
