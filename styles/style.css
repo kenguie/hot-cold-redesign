@@ -274,12 +274,30 @@ input.button:hover {
 	-o-transition: background 1s ease-in-out;
 	transition: background 1s ease-in-out;
 	cursor: pointer;
+	
+	
 }
 
 input.text {
 	text-align: center;
 	padding: 0.2em;
 	font-size: 2em;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+}
+
+input.text:hover {
+	background: #F09BA9;
+	color: #504343;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	cursor: pointer;
 }
 
 input:focus {

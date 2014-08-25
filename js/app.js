@@ -109,22 +109,27 @@ $(document).ready(function(){
 			
 		} else if (tries==1) {
 			$("#feedback").text ("Good first guess, try again ... ");
-			document.body.style.background=("rgb(198, 238, 155)");
+			document.body.style.background=("rgb(166, 214, 114)");
+			$('.game').animate({backgroundColor:'#CCC9B1'}, 2500);
 			
 		} else if (howfar >= 1 && howfar <= 10) {
 			$("#feedback").text ("Yikes! You are on Fire! Guess again!")
-			document.body.style.background=("rgb(231, 144, 64)");
+			document.body.style.background=("rgb(231, 144, 64)");  
+			$('.game').animate({backgroundColor:'rgb(163, 94, 48)'}, 2500);
 			
 		} else if (howfar >= 11 && howfar <= 20) {
 			$("#feedback").text ("You are really warm, try again!")
 			document.body.style.background=("rgb(169, 44, 180)");
+			$('.game').animate({backgroundColor:'#2D943D'}, 2500);
 			
 		} else if (howfar >= 21 && howfar <=30) {
 			$("#feedback").text ("Ooooooh, you're kinda cold! Give it another shot.")
 			document.body.style.background=("rgb(62, 60, 128)");
+			$('.game').animate({backgroundColor:'rgb(89, 196, 174)'}, 2500);
 			
 		} else {$("#feedback").text ("You are ice cold!")
-			document.body.style.background=("rgb(188, 186, 246)");
+			document.body.style.background=("rgb(188, 186, 246)"); 
+			$('.game').animate({backgroundColor:'rgb(153, 153, 153)'}, 2500);
 		};
 		
 // This works but I wanted more levels - thinking of combining both parts later		
