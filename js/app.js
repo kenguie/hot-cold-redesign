@@ -94,7 +94,7 @@ $(document).ready(function(){
 		if (guess===answer) {  
 			$("#feedback").text("Congratulations! You got it! The secret number was " +answer+ "!")
 			document.body.style.background=("red");
-			//$('.game').animate({backgroundColor:'red'}, 2500);
+			$('.game').animate({backgroundColor:'red'}, 2500);
 			//$('body').animate( { backgroundColor: hue }, 1000);
 			// $('.game').animate({backgroundColor:"red"},'slow');
 			// $('h2').animate({background:'#99cc00'}, 2500);
