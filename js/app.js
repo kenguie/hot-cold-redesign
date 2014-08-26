@@ -95,16 +95,7 @@ $(document).ready(function(){
 			$("#feedback").text("Congratulations! You got it! The secret number was " +answer+ "!")
 			document.body.style.background=("red");
 			$('.game').animate({backgroundColor:'red'}, 2500);
-			//$('body').animate( { backgroundColor: hue }, 1000);
-			// $('.game').animate({backgroundColor:"red"},'slow');
-			// $('h2').animate({background:'#99cc00'}, 2500);
-			
-			/* $("input #userGuess").on("mouseover",function(){
-				$(this).animate({backgroundColor:"red"},'slow');
-				}).on("mouseleave",function(){
-				$(this).animate({backgroundColor:"white"},'slow');
-			});  */
-			
+			//$('h1').animate( { backgroundColor: hue }, 1000);
 			tries=0;
 			
 		} else if (tries==1) {
@@ -148,17 +139,20 @@ $(document).ready(function(){
 		}; */
 		$("#guessList").append ('<li class="guessBox">'+guess+ '</li>');
 	};
-	
-	/*spectrum();
+
+
+/* ---------- Maximum call stack size exceeded  -----------
+	spectrum();
  
 	function spectrum(){
 		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
 		$('#div').animate( { backgroundColor: hue }, 1000);
 		spectrum();
 	}
-		*/
+/*-------------------------------------------*/
 
 	
 });
+
 
 
