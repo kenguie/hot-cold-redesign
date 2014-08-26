@@ -3,13 +3,13 @@ $(document).ready(function(){
 	
 	/*--- Get the number at web page load ---*/
 	console.log("ready");
-	answer=Math.floor((Math.random()*100)+1);
+	var answer=Math.floor((Math.random()*100)+1);
 	console.log (answer);
-	tries = 0;
-	guesses = [];
-	howfar = 0;
-	prevhowfar = 0;
-	guess=0;
+	var tries = 0;
+	var guesses = [];
+	var howfar = 0;
+	var prevhowfar = 0;
+	var guess=0;
 	
 	
 	/*--- Get the hidden number and start the game on new button ---*/
