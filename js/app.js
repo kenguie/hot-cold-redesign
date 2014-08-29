@@ -147,7 +147,7 @@ $(document).ready(function(){
 	function spectrum(){
 		var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
 		$('#div').animate( { backgroundColor: hue }, 1000);
-		spectrum();
+		spectrum();  - take this out - calls it over and over.
 	}
 /*-------------------------------------------*/
 
